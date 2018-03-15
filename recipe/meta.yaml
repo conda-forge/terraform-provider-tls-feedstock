@@ -1,10 +1,10 @@
 {% set provider= "TLS" %}
-{% set version = "1.0.1" %}
+{% set version = "1.1.0" %}
 
 {% set name = "terraform-provider-" + provider.lower() %}
 {% set x4_plugin = name + '_v' + version + "_x4" %}
 
-{% set sha256 = "6e118a1512c09882658448a4f4b0e910323f302e5b8c4c9a758a99ab0c831a3a" %}
+{% set sha256 = "cf5a328267c510f713608b9a97bf7086e57a9ae91fa0f83ce7e8514e61d8b770" %}
 {% set sha256_win32 = "8f74ad73afb26ea3eedbad03e14078f7cb4c0c193b60b046319d35dfb86249fe" %}
 {% set sha256_win64 = "e3b7ac84442b375a0b301929bff412d4690a4b43f77f153762076b475adbbe65" %}
 
