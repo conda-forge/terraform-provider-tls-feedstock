@@ -1,10 +1,10 @@
 {% set provider = "TLS" %}
-{% set version = "1.1.0" %}
+{% set version = "1.2.0" %}
 
 {% set name = "terraform-provider-" + provider.lower() %}
 {% set x4_plugin = name + '_v' + version + "_x4" %}
 
-{% set sha256 = "cf5a328267c510f713608b9a97bf7086e57a9ae91fa0f83ce7e8514e61d8b770" %}
+{% set sha256 = "8264ef866cf0a04e77e5f1d41e165d62b5b2eb7b4dd5779ce379de9419726ddc" %}
 {% set sha256_win64 = "7f744c06ec759a68f32d851c057ac073ae129c92e57c724189c448f755c6d9b7" %}
 
 package:
@@ -20,7 +20,7 @@ source:
     sha256: {{ sha256_win64 }}  # [win64]
 
 build:
-  number: 1
+  number: 0
   script:
     - XCOPY src\github.com\terraform-providers\{{ name|lower }}\{{ x4_plugin }}.exe %LIBRARY_BIN%  # [win]
 
